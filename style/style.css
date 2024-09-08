@@ -1,0 +1,190 @@
+body {
+  background-color: #f9fbfd;
+  padding: 0px;
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1c1c1c;
+}
+
+nav {
+  background-color: rgb(255, 250, 243);
+  min-height: 10vh;
+  min-width: 95vw;
+  display: flex;
+  justify-content: space-around;
+  padding: 5px;
+}
+
+nav .logo {
+  max-width: 80px;
+  max-height: auto;
+  position: relative;
+}
+
+nav .carrito {
+  max-width: 30px;
+  top: 20px;
+  max-height: auto;
+  position: relative;
+}
+
+nav .home {
+  top: 20px;
+  position: relative;
+  max-width: 30px;
+  max-height: auto;
+}
+
+.esquina {
+  bottom: 2px;
+  right: 2px;
+  position: fixed;
+  max-width: 60px;
+  max-height: auto;
+}
+
+/* Añadimos el efecto hover con la línea debajo para los iconos */
+.home:hover, .carrito:hover, .logo:hover {
+  scale: 1.1;
+}
+
+
+.inicio {
+  background-color: #f9fbfd;
+  min-width: 95vw;
+  min-height: 100vh;
+  display: flex;
+  padding: 10px;
+  justify-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: solid;
+  border-color: #ddd;
+}
+
+.cards {
+  position: relative;
+  margin: 10px;
+  margin-bottom: 50px;
+  display: flex;
+  min-width: 22vw;
+  min-height: 30vh;
+  background-color: #FCFCF7;
+  border: solid;
+  border-color: #ddd;
+}
+
+
+.card-contenido {
+  position: relative;
+  background-color: #F4F1F8;
+  min-height: 100%;
+  min-width: 100%;
+}
+
+.overlay {
+  min-height: 100%;
+  position: absolute;
+  cursor: pointer;
+  min-width: 100%;
+  z-index: 1;
+  opacity: 0;
+}
+
+.overlay:hover {
+  background-color: rgba(70, 43, 32, 0.726);
+  transition: 0.5s;
+  cursor: pointer;
+  opacity: 1;
+  z-index: 1;
+  visibility: visible;
+}
+
+
+.overlay h2, p {
+  color: white;
+  text-align: center;
+  margin: 10px;
+}
+
+.overlay a {
+  justify-content: space-around;
+  display: flex;
+  margin: 10px;
+  position: relative;
+  color: bisque;
+  font-weight: bold;
+  border: solid;
+  border-color: antiquewhite;
+  border-radius: 50px;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.overlay a:hover {
+  background-color: rgba(250, 235, 215, 0.189);
+  color: bisque;
+}
+
+
+.card-contenido img {
+  width: auto;
+  height: 300px;
+}
+
+.card-contenido .titulo-card {
+  position: absolute;
+  bottom: 0px;
+  min-width: 100%;
+  min-height: 40px;
+}
+
+.card-contenido .titulo-card h2 {
+  position: relative;
+  margin: 0px;
+  font-size: 18px;
+  font-weight: 600;
+  bottom: -50px;
+  color: #333;
+  text-align: center;
+}
+
+.card-contenido .titulo-card p {
+  position: absolute;
+  font-size: 18px;
+  color: #333;
+  font-weight: bold;
+  left: 100px;
+  bottom: -70px;
+}
+
+footer {
+  background-color: rgb(255, 250, 243);
+  height: 10vh;
+  min-width: 95vw;
+  text-align: center;
+  justify-content: center;
+  padding: 5px;
+}
+
+footer p {
+  color: #1c1c1c;
+  font-weight: bold;
+  display: inline;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+footer .links {
+  margin-top: 10px;
+  width: 95vw;
+}
+
+footer a {
+  color: #575757;
+  margin-left: 20px;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
